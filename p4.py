@@ -1,9 +1,6 @@
 import numpy as np
 m=int(input())
 n=int(input())
-
-#Program
-
 a=(np.random.default_rng()).integers(50,100,[m,n])
 print("matrix without sorting:")
 print('\n',a)
@@ -21,7 +18,7 @@ for i in range(n):
   for j in range(m):
     
     temp_1.append(a[j][i])
-temp_1=sorted(temp_1)
+temp_1=sorted(temp_1,reverse=True)
 c=np.reshape(temp_1,(m,n))
 print('\n',c)
 
