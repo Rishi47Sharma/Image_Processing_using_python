@@ -2,7 +2,7 @@ import numpy as np
 m=int(input())
 n=int(input())
 
-
+#Program
 
 a=(np.random.default_rng()).integers(50,100,[m,n])
 print("matrix without sorting:")
